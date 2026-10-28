@@ -13,15 +13,15 @@ if (type === "tv" || type === "anime") {
 let URL_DATA;
 
 if (type === "tv") {
-    URL_DATA = `https://bingr.one/watch/tv/${id}/${season}/${episode}`;
+    URL_DATA = `https://vidly.pro/tv/${id}/${season}/${episode}?theme=retro`;
 } else if (type === "anime") {
-    URL_DATA = `https://bingr.one/watch/anime/${id}/${episode}`;
+    URL_DATA = `https://vidly.pro/anime/${id}/${episode}?theme=retro`;
 } else {
-    URL_DATA = `https://bingr.one/watch/movie/${id}`;
+    URL_DATA = `https://vidly.pro/movie/${id}?theme=retro`;
 }
 
 if (!type || !id) {
-    URL_DATA = "https://bingr.one/watch/movie/1007757";
+    URL_DATA = "https://vidly.pro/movie/1007757";
 }
 
 const iframe = document.getElementsByTagName("iframe")[0];
