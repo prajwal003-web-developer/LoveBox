@@ -45,7 +45,7 @@ document.addEventListener("click", (event) => {
 
     if (
         url.origin !== location.origin &&
-        url.origin !== "https://bingr.one"
+        url.origin !== "https://vidly.pro"
     ) {
         event.preventDefault();
     }
